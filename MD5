@@ -1,0 +1,16 @@
+9e25d2a40fd0a3f02c685a5de96c3c82 *DESCRIPTION
+d16c9ad77903d8163a19f0d805b4cd84 *NAMESPACE
+8f958c31fb9499e34b976387d808ec19 *R/aggregated.index.number.R
+bbb915ada2700c723cf9de5e910bfb41 *R/fisher.index.number.R
+2dadeb414853a72b4dc84b7038dd78dc *R/index.number.chain.R
+53a79de897140fcf1e495fbc727f5fbf *R/index.number.serie.R
+a15d4b4284e570d0244864827621f497 *R/laspeyres.index.number.R
+d203d669e359c3927bde90757149b2f1 *R/paasche.index.number.R
+a4685d2ba9530c0f9113e1f2c3de0664 *build/partial.rdb
+c1ac72e22fd52d086c4c4f1183a5ef77 *man/IndexNumber-package.Rd
+f0de3474293b172abc60522a66acc680 *man/aggregated.index.number.Rd
+8ac27b837e11a2e3998783af10240d3f *man/fisher.index.number.Rd
+18375c382d39e590c7404aad5d91805e *man/index.number.chain.Rd
+a791e8dc282e10d6a2ebd78a326925ec *man/index.number.serie.Rd
+7eb60f9260f8666bf95464f1af678074 *man/laspeyres.index.number.Rd
+487a729964a4e7f7e8c76f6bce3e7ec0 *man/paasche.index.number.Rd
