@@ -1,14 +1,14 @@
-\name{laspeyres.index.number}
-\alias{laspeyres.index.number}
+\name{edgeworth.index.number}
+\alias{edgeworth.index.number}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Calculate the Laspeyres index number
+Calculate the Edgeworth index number
 }
 \description{
-This function determines the Laspeyres index number for those cases in which there exist more than an only product.
+This function determines the Edgeworth index number for those cases in which there exist more than an only product.
 }
 \usage{
-laspeyres.index.number(x, y, name, opt.plot = FALSE, opt.summary = FALSE)
+edgeworth.index.number(x, y, name, opt.plot = FALSE, opt.summary = FALSE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -37,16 +37,15 @@ Logical option to indicate if a statistical summary of the index number is requi
 A. Saavedra-Nieves, P. Saavedra-Nieves
 }
 \references{
-Laspeyres, E. (1864) Hamburger Warenpreise 1850--1863 und die kalifornisch-australischen Geldentdeckung seit. Jahrb. Natl. Stat. 3, 81--118, 209--236.
-
-Laspeyres, E. (1871) Die Berechnung einer mittleren Waarenpreissteigerung. Jahrb. Natl. Stat. 16, 296--314.
+Edgeworth, F. (1887) Measurement of change in value of money i. First Memorandum presented to the
+British Association for the Advancement of Science. Reprinted in his Papers Relating to Political Economy, 1, 198--259.
 }
 \examples{
 prices<-matrix(c(70,75,77,77,85,90,85,75,77,87,85,90,70,75,77,77,85,90),ncol=3)
 weights<-matrix(c(1,1.5,0.8,1.1,1,0.9,0.7,0.8,0.6,1,1.1,0.9,1,1,0.9,1.1,0.6,0.8),ncol=3)
-laspeyres.index.number(prices,weights,"Price",opt.plot=TRUE,opt.summary=TRUE)
+edgeworth.index.number(prices,weights,"Price",opt.plot=TRUE,opt.summary=TRUE)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{laspeyres}% use one of  RShowDoc("KEYWORDS")
-\keyword{laspeyres}% __ONLY ONE__ keyword per line
+\keyword{edgeworth}% use one of  RShowDoc("KEYWORDS")
+\keyword{edgeworth}% __ONLY ONE__ keyword per line

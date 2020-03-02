@@ -1,3 +1,3 @@
 exportPattern("^[[:alpha:]]+")
 importFrom("graphics", "abline", "axis", "plot")
-export(aggregated.index.number,index.number.chain,index.number.serie,fisher.index.number,paasche.index.number,laspeyres.index.number)
+export(aggregated.index.number,index.number.chain,index.number.serie,fisher.index.number,paasche.index.number,edgeworth.index.number,laspeyres.index.number)

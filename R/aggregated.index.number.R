@@ -26,8 +26,13 @@ ind.index[,i]<-index.number.chain(x[,i],name,opt.plot=FALSE,opt.summary=FALSE)[,
 }
 }
 
-if (type=="aritmetic"){index.n.aggregate<-apply(ind.index,1,mean)}
+if (type=="arithmetic"){index.n.aggregate<-apply(ind.index,1,mean)}
 if (type=="geometric"){index.n.aggregate<-apply(ind.index,1,prod)^(1/n.prod)}
+if (type=="harmonic"){index.n.aggregate<-n.prod/apply(1/ind.index,1,sum)}
+if (type=="BDutot"){
+  ind.index<-apply(x,1,sum)
+  index.n.aggregate<-index.number.serie(ind.index,name,opt.plot = FALSE, opt.summary = FALSE)[,3]
+}
 
 
 if (opt.plot==TRUE){
@@ -54,15 +59,20 @@ results<-table.index
 message(" ", "\n")
 
 message("Aggregate index number", "\n")
-if (type=="aritmetic"){message("Aritmetic","\n")}
+if (type=="arithmetic"){message("Arithmetic","\n")}
 if (type=="geometric"){message("Geometric","\n")}
+if (type=="harmonic"){message("Harmonic","\n")}
+if (type=="BDutot"){message("Bradstreet-Dutot","\n")}
+
 
 message(" ","\n")
 if (opt.summary){
 message("Summary","\n")
-message("Min.=",min(index.n.aggregate[-1]),"Stage=",which.min(index.n.aggregate[-1]),"\n")
-message("Max.=",max(index.n.aggregate),"Stage=",which.max(index.n.aggregate),"\n")
-results<-list(summary(index.n.aggregate),results)
+message("Min.=",min(index.n.aggregate[-1]),"\n")
+message("Stage=",which.min(index.n.aggregate[-1]),"\n")
+message("Max.=",max(index.n.aggregate[-1]),"\n")
+message("Stage=",which.max(index.n.aggregate[-1]),"\n")
+results<-list(summary(index.n.aggregate[-1]),results)
 names(results)<-c("Summary","Agg. index number")
 }
 return(results)

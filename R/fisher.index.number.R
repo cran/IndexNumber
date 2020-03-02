@@ -14,7 +14,7 @@ message("Please, introduce a name of the variable as a character","\n")
     xmat<-x
 n.prod<-ncol(xmat)
 
-      laspeyres<-laspeyres.index.number(x,y[1,],name,opt.plot=FALSE,opt.summary=FALSE)[,n.prod+2]
+      laspeyres<-laspeyres.index.number(x,y,name,opt.plot=FALSE,opt.summary=FALSE)[,n.prod+2]
 
       paasche<-paasche.index.number(x,y,name,opt.plot=FALSE,opt.summary=FALSE)[,n.prod+2]
 
@@ -48,9 +48,11 @@ results<-table.index
 message(" ","\n")
 if (opt.summary){
 message("Summary","\n")
-      message("Min.=",min(index.n.fisher[-1]),"Stage=",which.min(index.n.fisher[-1]),"\n")
-message("Max.=",max(index.n.fisher),"Stage=",which.max(index.n.fisher),"\n")
-results<-list(summary(index.n.fisher),results)
+message("Min.=",min(index.n.fisher[-1]),"\n")
+message("Stage=",which.min(index.n.fisher[-1]),"\n")
+message("Max.=",max(index.n.fisher[-1]),"\n")
+message("Stage=",which.max(index.n.fisher[-1]),"\n")
+results<-list(summary(index.n.fisher[-1]),results)
 names(results)<-c("Summary","Agg. index number")
 }
 return(results)

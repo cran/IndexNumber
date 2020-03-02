@@ -27,12 +27,14 @@ colnames(table.index)<-c("Stages",name,"Index number")
 row.names(table.index)<-c()
 
 results<-table.index
-      message("Index number in chain", "\n")
 if (opt.summary){
+message("Index number in chain", "\n")
 message("Summary","\n")
-      message("Min.=",min(index.n.chain[-1]),"Stage=",which.min(index.n.chain[-1]),"\n")
-message("Max.=",max(index.n.chain),"Stage=",which.max(index.n.chain),"\n")
-results<-list(summary(index.n.chain),results)
+message("Min.=",min(index.n.chain[-1]),"\n")
+message("Stage=",which.min(index.n.chain[-1]),"\n")
+message("Max.=",max(index.n.chain),"\n")
+message("Stage=",which.max(index.n.chain),"\n")
+results<-list(summary(index.n.chain[-1]),results)
 names(results)<-c("Summary","Index number")
 }
 return(results)
