@@ -1,4 +1,4 @@
-5759ce8e9b1331ba3569a156aeb51a8d *DESCRIPTION
+f363432f72bdc939ab75244ef4d0c734 *DESCRIPTION
 89023b33b031451a853bc99252dc6f87 *NAMESPACE
 692ae9e353748d030635a171aef31769 *R/ActivePeople-data.R
 ae7e665dbe39f9352272201441dfb898 *R/ECResources-data.R
@@ -11,7 +11,7 @@ fc9f0b2b4b46515f2bd010981d5a303d *R/Food-data.R
 c3e6a807c741fcbf3ece0851788bb482 *R/index.number.serie.R
 3527dc5851c17cc6fe7ae2b9a40188a9 *R/laspeyres.index.number.R
 f5dd6d0b85f945d628c3634c3da2abba *R/paasche.index.number.R
-cd013de4a6b22d06010dd6beeab5fbc9 *build/partial.rdb
+233170909bea9a322aa57820c6bbf1b3 *build/partial.rdb
 7cbe8bb21700e81b698159c5ce40e7e7 *data/ActivePeople.rda
 5eaaca5add1fc8f70e0c3e3007fffff1 *data/ECResources.rda
 61f28d5162f81432591ff7d3fbb8d1a0 *data/Food.rda
