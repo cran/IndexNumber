@@ -13,10 +13,10 @@ edgeworth.index.number(x, y, name, opt.plot = FALSE, opt.summary = FALSE)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x}{
-It is a matrix containing that magnitude to be studied. In each column, it contains the magnitud of a different product. Thus, we have \code{nrow(x)} values of a magnitud for \code{ncol(x)} products.
+Matrix that contains the magnitude(s) under study. In each column, it contains the magnitude of a different product considered. Thus, we have \code{nrow(x)} values of a magnitude for \code{ncol(x)} products.
 }
   \item{y}{
-It is a matrix containing that magnitude used as weight. In each column, it contains another magnitud of the different products along the time. Thus, we have \code{nrow(x)} values of a magnitud for \code{ncol(x)} products.
+Matrix that contains that magnitude used as weight. In each column, it contains another magnitude associated to each different product along the time. Thus, we have \code{nrow(x)} values of  magnitudes for the set of \code{ncol(x)} products.
 }
  \item{name}{
 Chain of characters to indicate the name of the variable under study.
@@ -39,6 +39,8 @@ A. Saavedra-Nieves, P. Saavedra-Nieves
 \references{
 Edgeworth, F. (1887) Measurement of change in value of money i. First Memorandum presented to the
 British Association for the Advancement of Science. Reprinted in his Papers Relating to Political Economy, 1, 198--259.
+
+ Marshall, A. (1887) Remedies for fluctuations of general prices. The Contemporary review, 1866-1900, 51, 355--375.
 }
 \examples{
 prices<-matrix(c(70,75,77,77,85,90,85,75,77,87,85,90,70,75,77,77,85,90),ncol=3)

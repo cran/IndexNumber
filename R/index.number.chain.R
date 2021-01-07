@@ -1,10 +1,19 @@
 index.number.chain <-
 function(x,name,opt.plot=FALSE,opt.summary=FALSE){
 
+
+opt<-TRUE
+
 if (is.character(name)==FALSE){
+opt<-FALSE
 message("Please, introduce a name of the variable as a character","\n")
 }
+if (is.logical(opt.plot)==FALSE|is.logical(opt.summary)==FALSE){
+opt<-FALSE
+message("Please, revise the logical options opt.plot and opt.summary","\n")
+}
 
+if (opt==TRUE){
 xaux<-x[-length(x)]
 index.n.chain<-c(1,x[-1]/xaux)*100
 
@@ -38,4 +47,5 @@ results<-list(summary(index.n.chain[-1]),results)
 names(results)<-c("Summary","Index number")
 }
 return(results)
+}
 }

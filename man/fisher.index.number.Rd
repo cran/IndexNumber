@@ -37,6 +37,8 @@ Logical option to indicate if a statistical summary of the index number is requi
 A. Saavedra-Nieves, P. Saavedra-Nieves
 }
 \references{
+Fisher, I. (1922) The making of index numbers: a study of their varieties, tests, and reliability, volume 1. Houghton Mifflin.
+
 Lapedes, Daniel N. (1978) Dictionary of Physics and Mathematics. McGrow--Hill. p. 367. ISBN 0-07-045480-9.
 }
 \examples{

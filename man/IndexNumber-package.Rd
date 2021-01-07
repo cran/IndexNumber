@@ -23,11 +23,15 @@ Maintainer: \packageMaintainer{IndexNumber}
 \keyword{IndexNUMBER}
 
 \references{
+- (2004) Consumer Price Index Manual: Theory and Practice. ILO, IMF. CPI Manual OECD, UN, Eurostat, and The World Bank by ILO, Geneva.
+
 Index Number (2008) In: The Concise Encyclopedia of Statistics. Springer, New York, NY. <doi:https://doi.org/10.1007/978-0-387-32833-1>.
 
 Laspeyres, E. (1871) Die Berechnung einer mittleren Waarenpreissteigerung. Jahrb. Natl. Stat. 16, 296--314.
 
 Paasche, H. (1874) Uber die Preisentwicklung der letzten Jahre nach den Hamburger Borsen-notirungen. Jahrb. Natl. Stat. 23, 168--178.
+
+
 }
 
 \examples{

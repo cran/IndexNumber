@@ -1,10 +1,18 @@
 index.number.serie <-
 function(x,name,opt.plot=FALSE,opt.summary=FALSE){
 
+opt<-TRUE
+
 if (is.character(name)==FALSE){
+opt<-FALSE
 message("Please, introduce a name of the variable as a character","\n")
 }
+if (is.logical(opt.plot)==FALSE|is.logical(opt.summary)==FALSE){
+opt<-FALSE
+message("Please, revise the logical options opt.plot and opt.summary","\n")
+}
 
+if (opt==TRUE){
 x0<-x[1]
 index.n.serie<-x/x0*100
 
@@ -38,5 +46,5 @@ results<-list(summary(index.n.serie[-1]),results)
 names(results)<-c("Summary","Index number")
 }
 return(results)
-
+}
 }

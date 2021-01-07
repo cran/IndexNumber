@@ -1,15 +1,28 @@
 edgeworth.index.number<-function(x,y,name,opt.plot=FALSE,opt.summary=FALSE){
 
-if (is.matrix(x)==FALSE){
-message("Please, introduce a matrix with the prices of different products","\n")
+x<-as.matrix(x)
+y<-as.matrix(y)
+
+opt<-TRUE
+if (is.matrix(x)==FALSE|!dim(x)[2]>=2|is.numeric(as.matrix(x))==FALSE){
+    opt<-FALSE
+    message("Please, introduce a matrix with the prices of different products","\n")
 }
-if (is.matrix(y)==FALSE){
-message("Please, introduce a matrix with the prices of different products","\n")
+if (is.matrix(y)==FALSE|!dim(y)[2]>=2|is.numeric(as.matrix(y))==FALSE){
+    opt<-FALSE
+    message("Please, introduce a matrix with the prices of different products","\n")
 }
 if (is.character(name)==FALSE){
-message("Please, introduce a name of the variable as a character","\n")
+    opt<-FALSE
+    message("Please, introduce a name of the variable as a character","\n")
+}
+if (is.logical(opt.plot)==FALSE|is.logical(opt.summary)==FALSE){
+    opt<-FALSE
+    message("Please, revise the logical options opt.plot and opt.summary","\n")
 }
 
+
+if (opt==TRUE){
     xmat<-x
 n.prod<-ncol(xmat)
 ind.index<-rep(0,nrow(xmat))
@@ -55,4 +68,5 @@ results<-list(summary(index.n.edgeworth[-1]),results)
 names(results)<-c("Summary","Agg. index number")
 }
 return(results)
+}
 }

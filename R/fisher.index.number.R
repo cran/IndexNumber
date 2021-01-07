@@ -1,24 +1,37 @@
 fisher.index.number <-
 function(x,y,name,opt.plot=FALSE,opt.summary=FALSE){
 
-if (is.matrix(x)==FALSE){
+x<-as.matrix(x)
+y<-as.matrix(y)
+
+opt<-TRUE
+if (is.matrix(x)==FALSE|!dim(x)[2]>=2|is.numeric(as.matrix(x))==FALSE){
+opt<-FALSE
 message("Please, introduce a matrix with the prices of different products","\n")
 }
-if (is.matrix(y)==FALSE){
+if (is.matrix(y)==FALSE|!dim(y)[2]>=2|is.numeric(as.matrix(y))==FALSE){
+opt<-FALSE
 message("Please, introduce a matrix with the prices of different products","\n")
 }
 if (is.character(name)==FALSE){
+opt<-FALSE
 message("Please, introduce a name of the variable as a character","\n")
 }
+if (is.logical(opt.plot)==FALSE|is.logical(opt.summary)==FALSE){
+opt<-FALSE
+message("Please, revise the logical options opt.plot and opt.summary","\n")
+}
+
+if (opt==TRUE){
 
     xmat<-x
-n.prod<-ncol(xmat)
+    n.prod<-ncol(xmat)
 
-      laspeyres<-laspeyres.index.number(x,y,name,opt.plot=FALSE,opt.summary=FALSE)[,n.prod+2]
+    laspeyres<-laspeyres.index.number(x,y,name,opt.plot=FALSE,opt.summary=FALSE)[,n.prod+2]
 
-      paasche<-paasche.index.number(x,y,name,opt.plot=FALSE,opt.summary=FALSE)[,n.prod+2]
+    paasche<-paasche.index.number(x,y,name,opt.plot=FALSE,opt.summary=FALSE)[,n.prod+2]
 
-index.n.fisher<-sqrt(laspeyres*paasche)
+    index.n.fisher<-sqrt(laspeyres*paasche)
 
 if (opt.plot==TRUE){
 if (is.character(name)){
@@ -56,4 +69,5 @@ results<-list(summary(index.n.fisher[-1]),results)
 names(results)<-c("Summary","Agg. index number")
 }
 return(results)
+}
 }
