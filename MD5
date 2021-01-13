@@ -1,4 +1,4 @@
-9e6d9b3e4ba44d14e8625e41c41b9418 *DESCRIPTION
+57f6e1bb76df3ed52a70ef42e69f72e5 *DESCRIPTION
 89023b33b031451a853bc99252dc6f87 *NAMESPACE
 692ae9e353748d030635a171aef31769 *R/ActivePeople-data.R
 ae7e665dbe39f9352272201441dfb898 *R/ECResources-data.R
@@ -11,7 +11,7 @@ fc9f0b2b4b46515f2bd010981d5a303d *R/Food-data.R
 776dd112a38020786cc3c5200474864c *R/index.number.serie.R
 0ccb4815e22344df090cbaa8e1b44972 *R/laspeyres.index.number.R
 c6d5070d6c69b73d6c4c93dd3a1fb3c0 *R/paasche.index.number.R
-c1874301361f17b1552e37b7a6ff68ad *build/partial.rdb
+67efeef8266038c4c45fe57ae5b14498 *build/partial.rdb
 7cbe8bb21700e81b698159c5ce40e7e7 *data/ActivePeople.rda
 5eaaca5add1fc8f70e0c3e3007fffff1 *data/ECResources.rda
 61f28d5162f81432591ff7d3fbb8d1a0 *data/Food.rda
@@ -22,7 +22,7 @@ c2df039f355d536c501d9cd4f9950a8e *man/Food.Rd
 d4cb5e08d27b2b0600fa1aa592a4223f *man/IndexNumber-package.Rd
 1d32b056d7713de9a2050dc55683f359 *man/Mortgages.Rd
 7a530982613b81df75b6b57a4940609a *man/aggregated.index.number.Rd
-4f89f4749a53eab0f5fe488b54839b83 *man/edgeworth.index.number.Rd
+e5ceff388c5b1f6f3e10b3205b8022bc *man/edgeworth.index.number.Rd
 299db3d26d647e78c25aff48e9f970f6 *man/fisher.index.number.Rd
 18375c382d39e590c7404aad5d91805e *man/index.number.chain.Rd
 a791e8dc282e10d6a2ebd78a326925ec *man/index.number.serie.Rd

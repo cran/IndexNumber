@@ -5,7 +5,7 @@
 Calculate the Edgeworth index number
 }
 \description{
-This function determines the Edgeworth index number for those cases in which there exist more than an only product.
+This function determines the Marshall-Edgeworth index number for those cases in which there exist more than an only product.
 }
 \usage{
 edgeworth.index.number(x, y, name, opt.plot = FALSE, opt.summary = FALSE)
