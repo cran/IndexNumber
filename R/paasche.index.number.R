@@ -35,7 +35,7 @@ if (opt.plot==TRUE){
 if (is.character(name)){
 min.in<-min(min(index.n.paasche)*0.9,100)
 max.in<-max(max(index.n.paasche)*1.1,100)
-plot(index.n.paasche,type="l",xaxt='n',ylim=c(min.in,max.in),xlab="Stages",ylab=name,col="red")
+plot(index.n.paasche,type="l",xaxt='n',ylim=c(min.in,max.in),xlab="Stages",ylab= paste(name,"Index Number",sep=": "),col="red")
 axis(side = 1, at =seq(1,length(x),by=1),labels=0:(length(x)-1))
 abline(h=100,col="gray",lty=2)
 }else{
